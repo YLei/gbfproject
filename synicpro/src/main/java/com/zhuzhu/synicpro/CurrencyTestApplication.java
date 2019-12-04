@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CurrencyTestApplication {
 
 	public static void main(String[] args) {
-
+		/**这是分支**/
 		SpringApplication.run(CurrencyTestApplication.class, args);
 	}
 
