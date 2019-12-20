@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-
+//单播
 public class SingleSocketServer {
     public static void main(String[] arg) throws IOException {
         //创建一个服务
@@ -24,15 +24,22 @@ public class SingleSocketServer {
                         //写数据给客户端
                         PrintWriter writer = new PrintWriter(socket.getOutputStream());
                         //循环打印
-                        while (true){
-
-
+                        while (true) {
+                            String clientData = reader.readLine();
+                            if(clientData ==null){
+                                break;
+                            }
+                            System.out.println("服务器接收到来自客户端的数据："+clientData);
+                            //向客户端写数据
+                            writer.println("Hello!I am YL");
+                            //清空
+                            writer.flush();
                         }
                     }catch (IOException e){
                         e.printStackTrace();
                     }
 
-                });
+                }).start();
             }
         }catch (Exception e){
             e.printStackTrace();
