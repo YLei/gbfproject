@@ -7,7 +7,7 @@ import java.net.MulticastSocket;
 import java.net.UnknownHostException;
 
 //组播（客户端）
-public class MulticatSocketClient {
+public class MulticatSocketClient2 {
     public static void main(String[] args) throws UnknownHostException {
         //创建组
         InetAddress group  = InetAddress.getByName("224.1.2.3");

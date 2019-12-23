@@ -20,7 +20,7 @@ public class MulticatSocketServer {
                 String data = "Hello!YL!";
                 byte[] bytes = data.getBytes();
                 //发送UDP消息
-                socket.send(new DatagramPacket(bytes,bytes.length,group,4321));
+                socket.send(new DatagramPacket(bytes,bytes.length,group,6666));
                 //休眠两秒
                 TimeUnit.SECONDS.sleep(2);
             }
