@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="vip20191223" />
+        <module name="vip20191225" />
+        <module name="vip1219" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />
